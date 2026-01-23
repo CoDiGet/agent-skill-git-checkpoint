@@ -14,6 +14,9 @@
 - **🔒 安全沙箱**：内置 Explicit Constraints，严禁 AI 执行 `git push`，避免污染远程仓库。
 - **🔌 标准格式**：符合 Anthropic / Spring AI 等框架定义的 `SKILL.md` 标准。
 
+## 演示图
+![演示截图](./ys.png)
+
 ## 🚀 如何使用
 
 ### 1. 下载 Skill
