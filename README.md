@@ -34,10 +34,11 @@ Treat it as a strictly local "Ctrl+S" operation.
 ```
 
 🛠️ 工作流程演示
+```text
 用户: "把 main.py 里的端口改成 8080。"
-
+```
 AI Agent:
-
+```text
 🛠️ 调用 write_file 修改代码。
 
 🤖 触发 Auto-Trigger Protocol。
@@ -47,7 +48,8 @@ AI Agent:
 💾 执行 git add . && git commit -m "⚡ perf: change port to 8080"。
 
 💬 回复用户: "已修改端口为 8080，并自动创建本地备份。"
-
+```
+---
 ⚠️ 免责声明
 此 Skill 仅执行本地 Git 操作。虽然设有安全限制，但请确保在受控环境中使用 AI 执行 Shell 命令。建议在开发分支上使用。
 
