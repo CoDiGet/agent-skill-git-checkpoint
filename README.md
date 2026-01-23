@@ -36,9 +36,9 @@ Treat it as a strictly local "Ctrl+S" operation.
 🛠️ 工作流程演示
 ```text
 用户: "把 main.py 里的端口改成 8080。"
-```
+
 AI Agent:
-```text
+
 🛠️ 调用 write_file 修改代码。
 
 🤖 触发 Auto-Trigger Protocol。
